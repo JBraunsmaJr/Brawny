@@ -1,6 +1,6 @@
 name: DeployToGitHubPages
 env:
-  PUBLISH_DIR: bin/Release/net6/publish/wwwroot
+  PUBLISH_DIR: bin/Release/net6.0/browser-wasm/publish/
 
 # Controls when the action will run
 on:
@@ -24,7 +24,7 @@ jobs:
     - name: Rewrite base href
       uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
       with:
-        html_path: ${{ env.PUBLISH_DIR }}/index.html
+        html_path: ${{ env.PUBLISH_DIR }}/wwwroot/index.html
         base_href: /Brawny/
 
     - name: GitHub Pages
