@@ -21,6 +21,11 @@ jobs:
     - name: Publish app
       run: dotnet publish -c Release --output ${{ env.PUBLISH_DIR }}
 
+    - name: Rewrite base href
+      uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+      with:
+        html_path: ${{ env.PUBLISH_DIR }}/wwwroot/index.html
+        base_href: /Brawny/
 
     - name: GitHub Pages
       if: success()
