@@ -1,0 +1,16 @@
+﻿@inject IDialogService _dialogService
+
+<MudNavMenu>
+    <MudNavLink Href="/" Match="NavLinkMatch.All">Home</MudNavLink>
+    <MudNavLink Href="/Education" Match="NavLinkMatch.All">Education</MudNavLink>
+    <MudNavLink Href="/Skills" Match="NavLinkMatch.All">Skills</MudNavLink>
+    <MudNavLink Href="/Portfolio" Match="NavLinkMatch.All">Portfoio</MudNavLink>
+    <MudNavLink OnClick="OpenContactForm">Contact</MudNavLink>
+</MudNavMenu>
+
+@code{
+    void OpenContactForm()
+    {
+        _dialogService.Show<ContactDialog>("Contact");
+    }
+}

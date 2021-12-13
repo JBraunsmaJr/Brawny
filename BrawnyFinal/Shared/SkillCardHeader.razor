@@ -1,0 +1,15 @@
+﻿<MudCardHeader>
+  <MudText Typo="Typo.h3">@Title</MudText>
+  <MudSpacer/>
+  <MudChip Icon="@Icons.Filled.School" IconColor="Color.Info">@YearsOfExperience years</MudChip>
+</MudCardHeader>
+
+@code {
+
+  [Parameter]
+  public string Title { get; set; }
+
+  [Parameter]
+  public int YearsOfExperience { get; set; }
+
+}

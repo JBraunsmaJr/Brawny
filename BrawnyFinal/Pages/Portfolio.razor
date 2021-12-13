@@ -1,0 +1,82 @@
+﻿@page "/Portfolio"
+<PageTitle>Portfolio</PageTitle>
+
+<div style="margin: 16px">
+    <MudGrid>
+        <MudItem>
+            <MudCard>
+                <MudCardMedia Height="300" Image="images/engineers-notebook.png"/>
+                <MudCardHeader><MudText Typo="Typo.h4">Engineers Notebook</MudText></MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body1">Microservice which contains student-created documentation on various processes</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudLink Href="https://github.com/DeVry-Developer-Club/Engineers-Notebook" Target="_blank" Color="Color.Primary"
+                             Typo="Typo.button">
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub"/>
+                        Github
+                    </MudLink>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem>
+            <MudCard>
+                <MudCardMedia Height="300" Image="images/robot.jpg"/>
+                <MudCardHeader><MudText Typo="Typo.h4">Skynet</MudText></MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body1">Integrated Discord Bot in a web-app environment which provides various capabilities for the DeVry Developer's Club.</MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudLink Href="https://github.com/DeVry-Developer-Club/Skynet" Target="_blank" Color="Color.Primary" Typo="Typo.button">
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub"/>
+                        Github
+                    </MudLink>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+         <MudItem>
+            <MudCard>
+                <MudCardHeader><MudText Typo="Typo.h4">DisCatSharp</MudText></MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body1">
+                        A C# wrapper library for Discord's API. Enables developers to create Discord bots!
+                    </MudText>
+                    <MudText Typo="Typo.body1">
+                        As a web developer I wanted to host, and integrate bots in a web host environment. I contributed to DisCatSharp by creating the Hosting and Configuration
+                        modules.
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudLink Href="https://github.com/Aiko-IT-Systems/DisCatSharp" Target="_blank" Color="Color.Primary" Typo="Typo.button">
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub"/>
+                        Github
+                    </MudLink>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+        
+        <MudItem>
+            <MudCard>
+                <MudCardHeader><MudText Typo="Typo.h4">DisCatSharp Project Templates</MudText></MudCardHeader>
+                <MudCardContent>
+                    <MudText Typo="Typo.body1">
+                        This contains a few C# project templates tailored for the Hosting and Configuration modules. As a developer, or newcomer to the library
+                        getting started is as easy as project new! 
+                    </MudText>
+                </MudCardContent>
+                <MudCardActions>
+                    <MudLink Href="https://github.com/Aiko-IT-Systems/DisCatSharp.ProjectTemplates" Target="_blank" Color="Color.Primary" Typo="Typo.button">
+                        <MudIcon Icon="@Icons.Custom.Brands.GitHub"/>
+                        Github
+                    </MudLink>
+                </MudCardActions>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+</div>
+
+@code {
+    
+}
