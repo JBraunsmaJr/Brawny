@@ -26,6 +26,12 @@ jobs:
       with:
         html_path: ${{ env.PUBLISH_DIR }}/wwwroot/index.html
         base_href: /Brawny/
+      
+    - name: Copy index.html to 404.html to serve the same file when a file is not found
+      run: cp ${{ env.PUBLISH_DIR }}/wwwroot/index.html ${{ env.PUBLISH_DIR }}/wwwroot/404.html
+      
+    - name: Add .nojekyll file to tell Github Pages to not treat this as a Jekyll Project. (allow files and folders starting with an underscore)
+      run: touch ${{ env.PUBLISH_DIR }}/wwwroot/.nojekyll
 
     - name: GitHub Pages
       if: success()

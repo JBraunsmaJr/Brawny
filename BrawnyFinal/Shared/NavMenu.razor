@@ -1,18 +1,10 @@
 ﻿@inject IDialogService _dialogService
 
 <MudNavMenu>
-    <a class="mud-nav-item mud-ripple" href="/"><div class="mud-nav-link-text">Home</div></a>
-    <a class="mud-nav-item mud-ripple" href="/education"><div class="mud-nav-link-text">Education</div></a>
-    <a class="mud-nav-item mud-ripple" href="/skills"><div class="mud-nav-link-text">Skills</div></a>
-    <a class="mud-nav-item mud-ripple" href="/portfolio"><div class="mud-nav-link-text">Portfolio</div></a>
-    @{
-        /*
-         <MudNavLink Href="/" Match="NavLinkMatch.All">Home</MudNavLink>
-        <MudNavLink Href="/Education" Match="NavLinkMatch.All">Education</MudNavLink>
-        <MudNavLink Href="/Skills" Match="NavLinkMatch.All">Skills</MudNavLink>
-        <MudNavLink Href="/Portfolio" Match="NavLinkMatch.All">Portfoio</MudNavLink>
-         */
-    }
+    <MudNavLink Href="/" Match="NavLinkMatch.All">Home</MudNavLink>
+    <MudNavLink Href="/Education" Match="NavLinkMatch.All">Education</MudNavLink>
+    <MudNavLink Href="/Skills" Match="NavLinkMatch.All">Skills</MudNavLink>
+    <MudNavLink Href="/Portfolio" Match="NavLinkMatch.All">Portfoio</MudNavLink>
     <MudNavLink OnClick="OpenContactForm">Contact</MudNavLink>
 </MudNavMenu>
 
