@@ -2,6 +2,7 @@
 @using BrawnyFinal.Models
 @inject HttpClient _http
 @inject ISnackbar _snackbar
+@inject IJSRuntime _runtime 
 
 <PageTitle>Resources</PageTitle>
 
@@ -26,7 +27,8 @@
           Height="95vh"
           FixedHeader="true"
           Items="_resources"
-          Filter="Filter">
+          Filter="Filter"
+          OnRowClick="@((TableRowClickEventArgs<ResourceItem> args) => { _runtime.InvokeVoidAsync("open", args.Item.Url, "_blank"); })">
     <HeaderContent>
         <MudTh>Title</MudTh>
         <MudTh>Type</MudTh>
