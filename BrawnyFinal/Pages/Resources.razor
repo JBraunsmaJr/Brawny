@@ -7,6 +7,8 @@
 <PageTitle>Resources</PageTitle>
 
 <MudContainer>
+    <MudText Typo="Typo.caption">Filters</MudText>
+    <MudSpacer/>
     <MudChipSet AllClosable="false"
                 Filter="true"
                 @bind-SelectedChips="@_selectedChips"
@@ -24,7 +26,7 @@
           Hover="true"
           Striped="true"
           Virtualize="true"
-          Height="88vh"
+          Height="87vh"
           FixedHeader="true"
           Items="_resources"
           Filter="Filter"
