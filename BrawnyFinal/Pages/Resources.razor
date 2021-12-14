@@ -24,10 +24,11 @@
           Hover="true"
           Striped="true"
           Virtualize="true"
-          Height="95vh"
+          Height="88vh"
           FixedHeader="true"
           Items="_resources"
           Filter="Filter"
+          Style="margin-top: 10px"
           OnRowClick="@((TableRowClickEventArgs<ResourceItem> args) => { _runtime.InvokeVoidAsync("open", args.Item.Url, "_blank"); })">
     <HeaderContent>
         <MudTh>Title</MudTh>
