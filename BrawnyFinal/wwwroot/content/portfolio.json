@@ -1,0 +1,36 @@
+﻿[
+  {
+    "title": "Engineer's Notebook",
+    "description": "Microservice which contains student-created documentation on various processes",
+    "github": "https://github.com/DeVry-Developer-Club/Engineers-Notebook",
+    "image": "images/engineers-notebook.png"
+  },
+
+  {
+    "title": "Skynet",
+    "description": "Integrated Discord Bot in a web-app environment which provides various capabilities for the DeVry Developer's Club.",
+    "github": "https://github.com/DeVry-Developer-Club/Skynet",
+    "image": "images/robot.jpg"
+  },
+
+  {
+    "title": "DisCatSharp",
+    "description": "A C# wrapper library for Discord's API. Enables developers to create Discord bots!\n\nAs a web developer I wanted to host, and integrate bots in a web host environment. I contributed to DisCatSharp by creating the Hosting and Configuration modules.",
+    "github": "https://github.com/Aiko-IT-Systems/DisCatSharp",
+    "image": "images/discord.jpg"
+  },
+
+  {
+    "title": "DisCatSharp Project Templates",
+    "description": "This contains a few C# project templates tailored for the Hosting and Configuration modules. As a developer, or newcomer to the library getting started is as easy as project new!",
+    "github": "https://github.com/Aiko-IT-Systems/DisCatSharp.ProjectTemplates",
+    "image": "images/template.jpg"
+  },
+
+  {
+    "title": "Brawny",
+    "description": "Source code for this website!",
+    "github": "https://github.com/JBraunsmaJr/Brawny",
+    "image": "images/brawny.jpg"
+  }
+]
