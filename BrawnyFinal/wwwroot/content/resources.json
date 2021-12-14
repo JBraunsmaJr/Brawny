@@ -197,5 +197,29 @@
       "url": "https://www.youtube.com/user/thenewboston",
       "type": "channel",
       "tags": ["C#", "JavaScript", "Python", "General"]
+    },
+
+    {
+      "title": "Karel the Robot",
+      "url": "https://compedu.stanford.edu/karel-reader/docs/python/en/chapter1.html",
+      "description": "Learn and practice the fundamentals by getting Karel to do things",
+      "type": "Documentation",
+      "tags": ["Python", "Java", "Recommended"]
+    },
+  
+    {
+      "title": "Microsoft MVC",
+      "url": "https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio",
+      "description": "Great resource for getting started in dotNET MVC architecture.",
+      "type": "Documentation",
+      "tags": ["C#","Microsoft","Recommended"]
+    },
+  
+    {
+      "title": "CodingBat",
+      "url": "https://codingbat.com/java",
+      "description": "Are you able to solve text-based problems via code?",
+      "type": "Documentation",
+      "tags": ["Python","Java","Practice"]
     }
   ]
