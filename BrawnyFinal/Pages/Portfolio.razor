@@ -10,35 +10,30 @@
 }
 
 <div style="margin: 16px">
-    <MudCarousel Style="height: 800px"
-                 ShowArrows="true"
-                 ShowDelimiters="true"
-                 ArrowsPosition="Position.Bottom"
-                 AutoCycle="true"
-                 AutoCycleTime="TimeSpan.FromSeconds(15)"
-                 TData="object"
-                 SelectedIndex="0">
-        <ChildContent>
-            @foreach(var context in _items)
-            {
-                <MudCarouselItem Transition="Transition.Slide" Color="@Color.Dark">
-                    <div class="d-flex flex-column flex-column justify-top" style="height: 100%">
-                        <div style="width: 100%; height: 400px; background-repeat: no-repeat; background-size: auto; background-position:  center; background-image: url('@context.Image')"></div>
-                        <div style="padding: 16px; margin-top: 10px">
-                            <MudText Typo="Typo.h3">@context.Title</MudText>
-                            @foreach (var area in context.Description.Split("\n\n"))
-                            {
-                                <MudText Typo="Typo.body1">@area</MudText>
-                            }
-                            <MudLink Href="@context.Github" Target="_blank" Color="Color.Info" Typo="Typo.button">
-                                <MudIcon Icon="@Icons.Custom.Brands.GitHub"/> Github
-                            </MudLink>
-                        </div>
-                    </div>
-                </MudCarouselItem>
-            }    
-        </ChildContent>
-    </MudCarousel>
+    <MudGrid>
+        @foreach (var item in _items)
+        {
+            <MudItem md="@spacing">
+                <MudCard>
+                    <MudCardMedia Height="300" Image="@item.Image"/>
+                    <MudCardHeader><MudText Typo="Typo.h4">@item.Title</MudText></MudCardHeader>
+                    <MudCardContent>
+                        @foreach (var area in item.Description.Split("\n\n"))
+                        {
+                            <MudText Typo="Typo.body1">@area</MudText>    
+                        }
+                    </MudCardContent>
+                    <MudCardActions>
+                        <MudLink Href="@item.Github" Target="_blank" Color="Color.Info"
+                                 Typo="Typo.button">
+                            <MudIcon Icon="@Icons.Custom.Brands.GitHub"/>
+                            Github
+                        </MudLink>
+                    </MudCardActions>
+                </MudCard>
+            </MudItem>    
+        }
+    </MudGrid>
 </div>
 
 @code {
