@@ -103,24 +103,24 @@
                 <MudTabPanel Icon="@Icons.Material.Filled.Description"
                              ToolTip="Course Description"
                              Text="Course Description">
-                        <MudText Typo="Typo.body2">
-                            Introduces fundamentals of web design principles.
-                            Topics include user interface, web page conceptualization,
-                            page structure, hypertext markup language (HTML5),
-                            Cascading Style Sheets (CSS), JavaScript,
-                            and web accessibility standards.
-                        </MudText>
+                    <MudText Typo="Typo.body2">
+                        Introduces fundamentals of web design principles.
+                        Topics include user interface, web page conceptualization,
+                        page structure, hypertext markup language (HTML5),
+                        Cascading Style Sheets (CSS), JavaScript,
+                        and web accessibility standards.
+                    </MudText>
                 </MudTabPanel>
 
                 <MudTabPanel Icon="@Icons.Material.Filled.Settings"
-                                             Text="Final Project">
+                             Text="Final Project">
                     <MudText Typo="Typo.body2">
                         Creating this website was part of the final project for this class.
                     </MudText>
                 </MudTabPanel>
 
                 <MudTabPanel Icon="@Icons.Material.Filled.Assignment"
-                                             Text="Considerations">
+                             Text="Considerations">
                     <MudText Typo="Typo.body2">
                         Hosting site suggested by the school does not support
                         a server architecture. Only static files can be served.
@@ -137,6 +137,34 @@
                 </MudTabPanel>
             </MudTabs>
         </MudExpansionPanel>
+        <MudExpansionPanel Text="Physics 204">
+                    <MudTabs Position="Position.Left"
+                             Class="mt-8"
+                             PanelClass="pa-6"
+                             ApplyEffectsToContainer="true"
+                             Rounded="true"
+                             Border="true"
+                             Outlined="true" Color="Color.Primary"
+                             Elevation="3"
+                             MaxHeight="300">
+                        
+                        <MudTabPanel Icon="@Icons.Material.Filled.Description"
+                                     ToolTip="Course Description"
+                                     Text="Course Description">
+                                <MudText Typo="Typo.body2">
+                                    You will explore physics concepts including the fundamental laws of mechanics. Topics also include force and motion, energy and energy conversion, 
+                                    magnetism, and light. Exploration of physics concepts is accomplished through practical application.
+                                </MudText>
+                        </MudTabPanel>
+        
+                        <MudTabPanel Icon="@Icons.Material.Filled.AppRegistration"
+                                                     Text="Final Project">
+                            <MudText Typo="Typo.body2">
+                                Compile all weekly modules into a powerpoint. Click <MudLink Href="files/BraunsmaPHY204Final.pptx" Color="Color.Success">here</MudLink> to download/view.
+                            </MudText>
+                        </MudTabPanel>
+                    </MudTabs>
+                </MudExpansionPanel>
     </MudExpansionPanels>
 </div>
 @code {
