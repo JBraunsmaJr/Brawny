@@ -32,5 +32,12 @@
     "description": "Source code for this website!",
     "github": "https://github.com/JBraunsmaJr/Brawny",
     "image": "images/brawny.jpg"
+  },
+
+  {
+    "title": "Localization",
+    "description": "Utilizes source generators to make accessing your translations easier!",
+    "github": "https://github.com/JBraunsmaJr/LocalizationProject",
+    "image": "images/language.jpg"
   }
 ]
