@@ -31,7 +31,8 @@
           Items="_resources"
           Filter="Filter"
           Style="margin-top: 10px"
-          OnRowClick="@((TableRowClickEventArgs<ResourceItem> args) => { _runtime.InvokeVoidAsync("open", args.Item.Url, "_blank"); })">
+          T="ResourceItem"
+          OnRowClick="@OnRowClick">
     <HeaderContent>
         <MudTh>Title</MudTh>
         <MudTh>Type</MudTh>
@@ -57,6 +58,11 @@
     List<ResourceItem> _resources = new();
     List<string> _existingTags = new();
     MudChip[] _selectedChips;
+
+    private async Task OnRowClick(TableRowClickEventArgs<ResourceItem> args)
+    {
+        await _runtime.InvokeVoidAsync("open", args.Item.Url, "_blank");
+    }
     
     protected override async Task OnInitializedAsync()
     {

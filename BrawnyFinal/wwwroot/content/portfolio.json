@@ -1,5 +1,11 @@
 ﻿[
   {
+    "title": "Contribution Graph",
+    "description": "A custom github-action which generates a contribution graph for your github profile!",
+    "github": "https://github.com/jbraunsmajr/contributiongraph",
+    "image": "images/githubaction.jpg"
+  },
+  {
     "title": "Engineer's Notebook",
     "description": "Microservice which contains student-created documentation on various processes",
     "github": "https://github.com/DeVry-Developer-Club/Engineers-Notebook",
