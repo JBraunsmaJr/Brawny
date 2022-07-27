@@ -6,6 +6,12 @@
     "image": "images/githubaction.jpg"
   },
   {
+    "title": "Programming-Simplified",
+    "description": "A platform similar to leetcode/algoexpert but on Discord where students can submit code which undergoes a series of automated testing!",
+    "github": "https://github.com/Programming-Simplified-Community/CommunityBot",
+    "image": "images/programming-simplified.jpg.jpg"
+  },
+  {
     "title": "Engineer's Notebook",
     "description": "Microservice which contains student-created documentation on various processes",
     "github": "https://github.com/DeVry-Developer-Club/Engineers-Notebook",
