@@ -1,0 +1,41 @@
+﻿[
+  {
+    "title": "Contribution Graph",
+    "description": "A custom github-action which generates a contribution graph for your github profile!",
+    "github": "https://github.com/jbraunsmajr/contributiongraph",
+    "image": "images/githubaction.jpg"
+  },
+  {
+    "title": "Programming-Simplified",
+    "description": "A platform similar to leetcode/algoexpert but on Discord where students can submit code which undergoes a series of automated testing!",
+    "github": "https://github.com/Programming-Simplified-Community/CommunityBot",
+    "image": "images/programming-simplified.jpg"
+  },
+  {
+    "title": "DisCatSharp",
+    "description": "A C# wrapper library for Discord's API. Enables developers to create Discord bots!\n\nAs a web developer I wanted to host, and integrate bots in a web host environment. I contributed to DisCatSharp by creating the Hosting and Configuration modules.",
+    "github": "https://github.com/Aiko-IT-Systems/DisCatSharp",
+    "image": "images/discord.jpg"
+  },
+
+  {
+    "title": "DisCatSharp Project Templates",
+    "description": "This contains a few C# project templates tailored for the Hosting and Configuration modules. As a developer, or newcomer to the library getting started is as easy as project new!",
+    "github": "https://github.com/Aiko-IT-Systems/DisCatSharp.ProjectTemplates",
+    "image": "images/template.jpg"
+  },
+
+  {
+    "title": "Brawny",
+    "description": "Source code for this website!",
+    "github": "https://github.com/JBraunsmaJr/Brawny",
+    "image": "images/brawny.jpg"
+  },
+
+  {
+    "title": "Localization",
+    "description": "Utilizes source generators to make accessing your translations easier!",
+    "github": "https://github.com/JBraunsmaJr/LocalizationProject",
+    "image": "images/language.jpg"
+  }
+]
