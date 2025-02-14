@@ -1,0 +1,74 @@
+﻿@using BrawnyFinal.Models
+@inject UrlPreviewService _service
+
+@if (_model is not null)
+{
+    <MudItem sm="6" md="3">
+        <MudCard Elevation="3">
+            <MudCardHeader>
+                <MudText Typo="Typo.h6">
+                    @_model.Title.Replace("&#39;", "'")
+                </MudText>
+            </MudCardHeader>
+
+            @if (!string.IsNullOrWhiteSpace(_model.ImageUrl))
+            {
+                <MudCardMedia Style="background-size: contain" Image="@_model.ImageUrl.Replace("&quot;", "\"")" Height="200"/>
+            }
+
+            <MudCardContent>
+                <MudText Typo="Typo.body1">
+                    @_model.Description.Replace("&#39;", "'")
+                </MudText>
+
+                @if (Tags.Any())
+                {
+                    <MudChipSet T="string">
+                        @foreach (var tag in Tags)
+                        {
+                            <MudChip T="string">@tag</MudChip>
+                        }
+                    </MudChipSet>
+
+                }
+            </MudCardContent>
+            <MudCardActions>
+                <MudLink Href="@PreviewUrl" Target="_blank" Typo="Typo.button">
+                    <MudButton StartIcon="@Icons.Material.Filled.Link" 
+                               Color="Color.Primary"
+                               IconColor="Color.Secondary">
+                        View
+                    </MudButton>
+                </MudLink>
+            </MudCardActions>
+        </MudCard>
+    </MudItem>
+}
+else
+{
+    @Fallback
+}
+
+@code {
+    [Parameter] public string PreviewUrl { get; set; }
+
+    [Parameter]
+    public RenderFragment Fallback { get; set; }
+    
+    [Parameter]
+    public string[] Tags { get; set; }
+    
+    private UrlPreviewModel? _model;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            _model = await _service.GetPreviewAsync(PreviewUrl);
+        }
+        catch
+        {
+        }
+    }
+
+}

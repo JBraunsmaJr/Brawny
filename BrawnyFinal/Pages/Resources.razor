@@ -1,64 +1,42 @@
 ﻿@page "/Resources"
 @using BrawnyFinal.Models
+@using BrawnyFinal.Shared.Components
 @inject HttpClient _http
 @inject ISnackbar _snackbar
 @inject IJSRuntime _runtime 
+@inject UrlPreviewService _PreviewService
 
 <PageTitle>Resources</PageTitle>
 
 <MudContainer>
-    <MudText Typo="Typo.caption">Filters</MudText>
-    <MudSpacer/>
-    <MudChipSet AllClosable="false"
-                Filter="true"
-                @bind-SelectedChips="@_selectedChips"
-                MultiSelection="true"
-                SelectedValuesChanged="OnSelectedTagsChanged">
-        @foreach (var tag in _existingTags)
+    <MudGrid Spacing="3">
+        @foreach (var preview in _resources)
         {
-            <MudChip Color="Color.Info" Text="@tag" SelectedColor="Color.Tertiary"/>
+            <UrlPreview Tags="@preview.Tags" PreviewUrl="@preview.Url">
+                <Fallback>
+                    <MudItem sm="6" md="3">
+                        <MudCard>
+                            <MudCardHeader>@preview.Title</MudCardHeader>
+                            <MudCardContent>@preview.Description</MudCardContent>
+                            <MudCardActions>
+                                <MudLink Target="_blank"
+                                         Typo="Typo.button"
+                                         Href="@preview.Url">
+                                    Click
+                                </MudLink>
+                            </MudCardActions>
+                        </MudCard>
+                    </MudItem>
+                </Fallback>
+            </UrlPreview>
         }
-    </MudChipSet>
+    </MudGrid>
 </MudContainer>
-
-<MudTable Bordered="true"
-          Elevation="3"
-          Hover="true"
-          Striped="true"
-          Virtualize="true"
-          Height="87vh"
-          FixedHeader="true"
-          Items="_resources"
-          Filter="Filter"
-          Style="margin-top: 10px"
-          T="ResourceItem"
-          OnRowClick="@OnRowClick">
-    <HeaderContent>
-        <MudTh>Title</MudTh>
-        <MudTh>Type</MudTh>
-        <MudTh>Description</MudTh>
-        <MudTh>Tags</MudTh>
-    </HeaderContent>
-    <RowTemplate>
-        <MudTd DataLabel="Title"><MudLink Color="Color.Info" Target="_blank" Href="@context.Url">@context.Title</MudLink></MudTd>
-        <MudTd DataLabel="Type">@context.Type</MudTd>
-        <MudTd DataLabel="Description">@context.Description</MudTd>
-        <MudTd DataLabel="Tags">
-            <MudChipSet ReadOnly="true">
-                @foreach (var tag in context.Tags)
-                {
-                    <MudChip Text="@tag"/>
-                }
-            </MudChipSet>
-        </MudTd>
-    </RowTemplate>
-</MudTable>
 
 @code {
     List<ResourceItem> _resources = new();
-    List<string> _existingTags = new();
-    MudChip[] _selectedChips;
-
+    MudChip<string>[] _selectedChips;
+    
     private async Task OnRowClick(TableRowClickEventArgs<ResourceItem> args)
     {
         await _runtime.InvokeVoidAsync("open", args.Item.Url, "_blank");
@@ -69,29 +47,11 @@
         try
         {
             _resources = (await _http.GetFromJsonAsync<ResourceItem[]>("content/resources.json"))?.ToList() ?? new();
-            
-            // We need to grab all the existing tags from our file which will be used for filtering purposes
-            _existingTags = _resources
-                .SelectMany(x => x.Tags)
-                .Distinct()
-                .OrderBy(x=>x).ToList();
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex);
             _snackbar.Add(ex.Message, Severity.Error);
         }
-    }
-
-    void OnSelectedTagsChanged(ICollection<object> obj)
-    {
-        StateHasChanged();   
-    }
-    
-    // Does the item and selected tags have anything in common
-    private bool Filter(ResourceItem item)
-    {
-        if (_selectedChips == null || _selectedChips.Length == 0) return true;
-        return _selectedChips.Select(x => x.Text).Intersect(item.Tags).Any();
     }
 }
