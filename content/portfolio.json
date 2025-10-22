@@ -1,0 +1,27 @@
+﻿[
+  {
+    "title": "Contribution Graph",
+    "description": "A custom github-action which generates a contribution graph for your github profile!",
+    "github": "https://github.com/jbraunsmajr/contributiongraph",
+    "image": "images/githubaction.jpg"
+  },
+  {
+    "title": "Programming-Simplified",
+    "description": "A platform similar to leetcode/algoexpert but on Discord where students can submit code which undergoes a series of automated testing!",
+    "github": "https://github.com/Programming-Simplified-Community/CommunityBot",
+    "image": "images/programming-simplified.jpg"
+  },
+  {
+    "title": "Brawny",
+    "description": "Source code for this website!",
+    "github": "https://github.com/JBraunsmaJr/Brawny",
+    "image": "images/brawny.jpg"
+  },
+  {
+    "title": "Localization",
+    "description": "Utilizes source generators to make accessing your translations easier!",
+    "github": "https://github.com/JBraunsmaJr/LocalizationProject",
+    "image": "images/language.jpg"
+  }
+
+]
