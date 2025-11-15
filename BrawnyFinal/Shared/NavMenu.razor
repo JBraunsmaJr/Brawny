@@ -1,7 +1,13 @@
 ﻿@inject IDialogService _dialogService
 
 <MudNavMenu>
-    <MudNavLink Href="" Match="NavLinkMatch.All">Home</MudNavLink>
-    <MudNavLink Href="Portfolio" Match="NavLinkMatch.All">Portfoio</MudNavLink>
-    <MudNavLink Href="Resources" Match="NavLinkMatch.All">Resources</MudNavLink>
+    <MudNavLink Href="" Icon="@Icons.Material.Filled.Home" Match="NavLinkMatch.All">
+        Home
+    </MudNavLink>
+    <MudNavLink Icon="@Icons.Material.Filled.Work" Href="Portfolio" Match="NavLinkMatch.All">
+        Portfolio
+    </MudNavLink>
+    <MudNavLink Href="Resources" Icon="@Icons.Material.Filled.LibraryBooks" Match="NavLinkMatch.All">
+        Resources
+    </MudNavLink>
 </MudNavMenu>

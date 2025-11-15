@@ -15,14 +15,18 @@
             <UrlPreview Tags="@preview.Tags" PreviewUrl="@preview.Url">
                 <Fallback>
                     <MudItem sm="6" md="3">
-                        <MudCard>
-                            <MudCardHeader>@preview.Title</MudCardHeader>
-                            <MudCardContent>@preview.Description</MudCardContent>
+                        <MudCard Class="glass-card" Elevation="6">
+                            <MudCardHeader>
+                                <MudText Typo="Typo.subtitle1" Color="Color.Secondary">@preview.Title</MudText>
+                            </MudCardHeader>
+                            <MudCardContent>
+                                <MudText Typo="Typo.body2">@preview.Description</MudText>
+                            </MudCardContent>
                             <MudCardActions>
                                 <MudLink Target="_blank"
                                          Typo="Typo.button"
                                          Href="@preview.Url">
-                                    Click
+                                    <MudButton Variant="Variant.Outlined" Color="Color.Info" EndIcon="@Icons.Material.Filled.NorthEast">Open</MudButton>
                                 </MudLink>
                             </MudCardActions>
                         </MudCard>

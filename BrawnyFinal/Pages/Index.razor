@@ -2,14 +2,18 @@
 
 <PageTitle>Home</PageTitle>
 
-<MudGrid Class="brawny brawny-hero">
-    <MudItem Class="brawny-hero-content" md="5" Style="margin-top: 10%; margin-left: 10%;">
+<MudGrid Class="brawny brawny-hero modern-hero">
+    <MudItem Class="brawny-hero-content glass-card" md="6" sm="12" Style="margin-top: 8%; margin-left: 8%;">
         <h6>Brawny</h6>
         <h1>The Journey</h1>
         <p>of being a software engineer</p>
+        <div class="hero-cta">
+            <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="Portfolio" StartIcon="@Icons.Material.Filled.Work">View Portfolio</MudButton>
+            <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Href="Resources" Class="ml-3" StartIcon="@Icons.Material.Filled.LibraryBooks">Resources</MudButton>
+        </div>
     </MudItem>
     
-    <MudItem md="4" Style="margin-top: 4%;">
+    <MudItem md="4" sm="12" Style="margin-top: 4%;">
         <div class="brawny-hero-right-image brawny-hero-image"></div>
     </MudItem>
 </MudGrid>

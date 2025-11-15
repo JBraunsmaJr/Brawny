@@ -1,6 +1,6 @@
 @inherits LayoutComponentBase
 
-<MudThemeProvider IsDarkMode="true"/>
+<MudThemeProvider IsDarkMode="true" Theme="@_theme" />
 <MudDialogProvider FullWidth="true"
                    MaxWidth="MaxWidth.Medium"
                    CloseButton="true"
@@ -8,12 +8,12 @@
 <MudSnackbarProvider/>
 
 <MudLayout>
-    <MudAppBar Elevation="1">
+    <MudAppBar Elevation="0" Class="glass-appbar">
         <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
-        <MudLink Underline="Underline.None" Color="Color.Surface" Typo="Typo.h5" Class="ml-3" Href="">Brawny Tech</MudLink>
+        <MudLink Underline="Underline.None" Color="Color.Primary" Typo="Typo.h6" Class="ml-3 brand" Href="">Brawny Tech</MudLink>
         <MudSpacer />
     </MudAppBar>
-    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="2">
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="DrawerClipMode.Always" Elevation="1" Dense="true" Class="glass-drawer">
         <NavMenu/>
     </MudDrawer>
     <MudMainContent>
@@ -23,6 +23,29 @@
 
 @code {
     bool _drawerOpen = true;
+    MudTheme _theme = new()
+    {
+        PaletteDark = new PaletteDark()
+        {
+            Primary = Colors.Blue.Accent2,
+            Secondary = Colors.Purple.Accent2,
+            Background = "#0f1115",
+            Surface = "#151922",
+            AppbarBackground = "rgba(21,25,34,0.6)",
+            DrawerBackground = "rgba(21,25,34,0.6)",
+            DrawerText = "#D7DAE0",
+            TextPrimary = "#E6E9EF",
+            TextSecondary = "#A9B0BD",
+            Success = Colors.Green.Accent3,
+            Info = Colors.Cyan.Accent2,
+            Warning = Colors.Orange.Accent3,
+            Error = Colors.Red.Accent3
+        },
+        LayoutProperties = new LayoutProperties
+        {
+            DefaultBorderRadius = "12px"
+        }
+    };
 
     void DrawerToggle()
     {
