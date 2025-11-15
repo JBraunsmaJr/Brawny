@@ -4,9 +4,15 @@
 
 <MudGrid Class="brawny brawny-hero modern-hero">
     <MudItem Class="brawny-hero-content glass-card" md="6" sm="12" Style="margin-top: 8%; margin-left: 8%;">
-        <h6>Brawny</h6>
-        <h1>The Journey</h1>
-        <p>of being a software engineer</p>
+        <h6>Brawny • Software Engineer</h6>
+        <h1>I craft resilient, human‑centered software</h1>
+        <p>From tiny experiments to production systems — I design, build, and ship with intent.</p>
+        <MudChipSet T="string" ReadOnly="true" Class="mt-2" Style="gap:8px; margin-bottom:14px;">
+            <MudChip T="string" Color="Color.Primary" Variant="Variant.Outlined">.NET</MudChip>
+            <MudChip T="string" Color="Color.Secondary" Variant="Variant.Outlined">Blazor</MudChip>
+            <MudChip T="string" Color="Color.Info" Variant="Variant.Outlined">Cloud</MudChip>
+            <MudChip T="string" Color="Color.Success" Variant="Variant.Outlined">DevOps</MudChip>
+        </MudChipSet>
         <div class="hero-cta">
             <MudButton Variant="Variant.Filled" Color="Color.Primary" Href="Portfolio" StartIcon="@Icons.Material.Filled.Work">View Portfolio</MudButton>
             <MudButton Variant="Variant.Outlined" Color="Color.Secondary" Href="Resources" Class="ml-3" StartIcon="@Icons.Material.Filled.LibraryBooks">Resources</MudButton>
@@ -18,25 +24,30 @@
     </MudItem>
 </MudGrid>
 
-<MudText Align="Align.Center" Typo="Typo.h3" Style="margin-top: 10px;">About Me</MudText>
-<MudContainer>
-    <MudGrid Spacing="2" Style="margin-top: 16px">
-        <MudItem md="12">
-            <MudText Typo="Typo.body1">
-                Started my journey into software development back in High School. Pursued it as a hobby, creating various applications and games for fun.
-            </MudText>
-        </MudItem>
-        
-        <MudItem md="12">
-            <MudText Typo="Typo.body1">
-                Enlisted into the Army in 2012. It was during this time I received the nickname <strong>Brawny</strong>.
-            </MudText>
-        </MudItem>
-
-        <MudItem md="12">
-            <MudText Typo="Typo.body1">
-                Officially hopped into the programming profession in 2017. Shortly after I started pursuing a college degree where I became a mentor for others on their programming journey!
-            </MudText>
-        </MudItem>
-    </MudGrid>
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-6">
+    <MudPaper Class="glass-card" Elevation="0">
+        <MudStack Row="true" AlignItems="AlignItems.Center" Spacing="1">
+            <MudIcon Icon="@Icons.Material.Filled.Person" Color="Color.Primary" Size="Size.Large"/>
+            <MudText Typo="Typo.h4">About Me</MudText>
+        </MudStack>
+        <MudDivider Class="my-2" />
+        <MudGrid Spacing="3">
+            <MudItem md="6" sm="12">
+                <MudText Typo="Typo.body1">
+                    I wrote my first lines of code in high school and never quite stopped. What began as tinkering with game ideas turned into a habit of turning curiosity into working software.
+                </MudText>
+            </MudItem>
+            <MudItem md="6" sm="12">
+                <MudText Typo="Typo.body1">
+                    In 2012 I enlisted in the Army — that’s where I earned the nickname <strong>Brawny</strong>. Discipline, teamwork, and calm under pressure now shape how I build.
+                </MudText>
+            </MudItem>
+            <MudItem md="12" sm="12">
+                <MudText Typo="Typo.body1">
+                    Since 2017 I’ve been shipping production code. Along the way I mentored peers and students, helping them take their first steps from “Hello, World” to shipping features.
+                </MudText>
+            </MudItem>
+        </MudGrid>
+    </MudPaper>
+    
 </MudContainer>

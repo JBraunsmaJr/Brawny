@@ -89,6 +89,7 @@ p + h3 {
     line-height: 1.85;
 }
 
+.hero-cta { margin-top: 12px; }
 .hero-cta > * + * { margin-left: 12px; }
 
 /* Backgrounds */
