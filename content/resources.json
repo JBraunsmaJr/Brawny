@@ -1,0 +1,217 @@
+﻿[
+    {
+      "title": "Brackeys",
+      "description": "",
+      "url": "https://www.youtube.com/c/Brackeys",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "Code Monkey",
+      "description": "",
+      "url": "https://www.youtube.com/c/CodeMonkeyUnity",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "CodingMadeEasy",
+      "description": "",
+      "url": "https://www.youtube.com/user/CodingMadeEasy/videos",
+      "type": "channel",
+      "tags": ["C#", "Python", "OpenGL", "Java"]
+    },
+
+    {
+      "title": "Dave's Garage",
+      "description": "",
+      "url": "https://www.youtube.com/c/DavesGarage",
+      "type": "channel",
+      "tags": ["General"]
+    },
+
+    {
+      "title": "DevSquad",
+      "description": "",
+      "url": "https://www.youtube.com/c/VirtusEdu",
+      "type": "channel",
+      "tags": ["Unreal Engine", "C++", "Game Development"]
+    },
+
+    {
+      "title": "dotNET",
+      "description": "",
+      "url": "https://www.youtube.com/c/dotNET",
+      "type": "channel",
+      "tags": ["C#", "Microsoft"]
+    },
+
+    {
+      "title": "Engineering with Utsav",
+      "description": "",
+      "url": "https://www.youtube.com/c/EngineeringwithUtsav",
+      "type": "channel",
+      "tags": ["Microsoft", "General"]
+    },
+
+    {
+      "title": "Game Dev Guide",
+      "description": "",
+      "url": "https://www.youtube.com/c/GameDevGuide",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "GameDevHQ",
+      "description": "",
+      "url": "https://www.youtube.com/c/GameDevHQ",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "Gamer to Game Developer",
+      "description": "",
+      "url": "https://www.youtube.com/c/GamerToGameDeveloper",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "GamesWithGabe",
+      "description": "",
+      "url": "https://www.youtube.com/c/GamesWithGabe",
+      "type": "channel",
+      "tags": ["C++", "Java", "Game Development", "OpenGL"]
+    },
+
+    {
+      "title": "Infallible Code",
+      "description": "",
+      "url": "https://www.youtube.com/c/InfallibleCode",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "Jason Weimann",
+      "description": "",
+      "url": "https://www.youtube.com/c/Unity3dCollege",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "Jeffrey T. Fritz",
+      "description": "",
+      "url": "https://www.youtube.com/c/csharpfritz",
+      "type": "channel",
+      "tags": ["C#", "Microsoft", "Recommended"]
+    },
+
+    {
+      "title": "Kevin Powell",
+      "description": "",
+      "url": "https://www.youtube.com/kepowob",
+      "type": "channel",
+      "tags": ["CSS"]
+    },
+
+    {
+      "title": "LucidProgramming",
+      "description": "",
+      "url": "https://www.youtube.com/c/LucidProgramming",
+      "type": "channel",
+      "tags": ["Python", "Machine Learning"," Data Science"]
+    },
+
+    {
+      "title": "Microsoft Developer",
+      "description": "",
+      "url": "https://www.youtube.com/c/MicrosoftDeveloper",
+      "type": "channel",
+      "tags": ["Microsoft", "C#", "dotNET"]
+    },
+
+    {
+      "title": "Microsoft Visual Studio",
+      "description": "",
+      "url": "https://www.youtube.com/c/visualstudio",
+      "type": "channel",
+      "tags": ["Microsoft", "Visual Studio"]
+    },
+
+    {
+      "title": "NDC Conferences",
+      "description": "",
+      "url": "https://www.youtube.com/c/NDCConferences",
+      "type": "channel",
+      "tags": ["General"]
+    },
+
+    {
+      "title": "Nick Chapsas",
+      "description": "",
+      "url": "https://www.youtube.com/c/Elfocrash",
+      "type": "channel",
+      "tags": ["C#", "Recommended"]
+    },
+
+    {
+      "title": "Python Simplified",
+      "description": "",
+      "url": "https://www.youtube.com/c/PythonSimplified",
+      "type": "channel",
+      "tags": ["Python"]
+    },
+
+    {
+      "title": "Sebastian Lague",
+      "description": "",
+      "url": "https://www.youtube.com/c/SebastianLague",
+      "type": "channel",
+      "tags": ["Unity", "C#", "Game Development"]
+    },
+
+    {
+      "title": "Sharp Accent",
+      "description": "",
+      "url": "https://www.youtube.com/c/SharpAccent",
+      "type": "channel",
+      "tags": ["Unity", "Game Development"]
+    },
+
+    {
+      "title": "TheNewBoston",
+      "description": "",
+      "url": "https://www.youtube.com/user/thenewboston",
+      "type": "channel",
+      "tags": ["C#", "JavaScript", "Python", "General"]
+    },
+
+    {
+      "title": "Karel the Robot",
+      "url": "https://compedu.stanford.edu/karel-reader/docs/python/en/chapter1.html",
+      "description": "Learn and practice the fundamentals by getting Karel to do things",
+      "type": "Documentation",
+      "tags": ["Python", "Java", "Recommended"]
+    },
+  
+    {
+      "title": "Microsoft MVC",
+      "url": "https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/start-mvc?view=aspnetcore-6.0&tabs=visual-studio",
+      "description": "Great resource for getting started in dotNET MVC architecture.",
+      "type": "Documentation",
+      "tags": ["C#","Microsoft","Recommended"]
+    },
+  
+    {
+      "title": "CodingBat",
+      "url": "https://codingbat.com/java",
+      "description": "Are you able to solve text-based problems via code?",
+      "type": "Documentation",
+      "tags": ["Python","Java","Practice"]
+    }
+  ]
